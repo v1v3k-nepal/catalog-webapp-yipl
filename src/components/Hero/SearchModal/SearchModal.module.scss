@@ -1,0 +1,48 @@
+@import "../../../styles/mixins";
+
+.searchModalContainer{
+    position: absolute;
+    z-index: 5;
+    top: 125px;
+    right: -50%;
+    transition: all ease 0.3s;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    .closeIcon{
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .searchContainer{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 640px;
+        height: 56px;
+        padding: 5px 20px;
+        border-radius: 12px;
+        margin-right: 18px;
+        margin-top: -6px;
+
+        input{
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            color: #000;
+            border: none;
+            outline: none;
+            font-size: 18px;
+
+        }
+    }
+}
+
+.showSearchModal{
+    visibility: visible;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all ease 0.3s;
+}

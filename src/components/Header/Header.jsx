@@ -3,12 +3,18 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 import ResModal from "./ResourcesModal/ResModal";
+import SearchModal from "../Hero/SearchModal/SearchModal";
 
 const Header = () => {
-  const [visibleState, setVisibleState] = useState("hidden");
+  const [resModalVisibleState, setResModalVisibleState] = useState("hidden");
+  const [showSearch, setShowSearch] = useState(false);
 
   const toggleMenu = ()=>{
-    visibleState == "hidden" ? setVisibleState("visible") : setVisibleState("hidden");
+    resModalVisibleState == "hidden" ? setResModalVisibleState("visible") : setResModalVisibleState("hidden");
+  }
+
+  const toggleShowSearch = ()=>{
+    showSearch ? setShowSearch(false) : setShowSearch(true);
   }
 
   return (
@@ -25,7 +31,7 @@ const Header = () => {
 
         <nav>
           <ul>
-            <div className={`${styles.dynamicItems} ${visibleState=="visible" ? styles.visible : ""}`}>
+            <div className={`${styles.dynamicItems} ${resModalVisibleState=="visible" ? styles.visible : ""}`}>
               <li>Home</li>
               <li>About Us</li>
               <li>Case Studies</li>
@@ -35,7 +41,7 @@ const Header = () => {
                   <li>Resources</li>
                   <Image src="/arrow-down.png" alt="arrow down" width={20} height={20}></Image>
                 </div>
-                <ResModal visibility={visibleState}/>
+                <ResModal visibility={resModalVisibleState}/>
               </div>
           </ul>
         </nav>
@@ -47,8 +53,10 @@ const Header = () => {
         width={36}
         height={36}
         className={styles.searchIcon}
+        onClick={()=>toggleShowSearch()}
       ></Image>
     </div>
+    <SearchModal showSearch={showSearch} toggleShowSearch={toggleShowSearch}/>
     </div>
   );
 };
