@@ -1,0 +1,69 @@
+.headerContainer {
+  border-bottom: 1px solid #fff;
+  z-index: 4;
+  position: relative;
+
+  .headerContent {
+    max-width: 1280px;
+    height: 80px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+
+    .headerLeft {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .companyLogo{
+        cursor: pointer;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+
+        .dynamicItems{
+          display: flex;
+          gap: 40px;
+          opacity: 0;
+          transition: opacity 0.5s;
+          
+          li {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            cursor: pointer;
+          }
+        }
+
+        .visible{
+          opacity: 1;
+          transition: opacity 0.5s;
+        }
+
+        .resContainer{
+          .res{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            cursor: pointer;
+            li{
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .searchIcon {
+      padding: 6px;
+      cursor: pointer;
+    }
+  }
+}

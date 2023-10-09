@@ -1,12 +1,10 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+// import styles from './page.module.css'
+import Hero from "@/components/Hero/Hero"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <h1>Hello</h1>
-      </div>
-    </main>
+    <div>
+      {/* <Hero/> */}
+    </div>
   )
 }

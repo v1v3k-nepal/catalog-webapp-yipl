@@ -1,0 +1,45 @@
+
+.resModal{
+    background: #fff;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    max-width: 412px;
+    max-height: 320px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(-20px);
+    transition: visibility 0s, opacity 0.5s, transform 0.5s;
+    opacity: 0;
+
+
+    .modalItem{
+        display: flex;
+        padding: 12px;
+        gap: 16px;
+        cursor: pointer;
+        
+        h1{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000;
+        }
+
+        p{
+            color: #667085;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.visibleClass{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(15px);
+    transition: visibility 0s, opacity 0.3s, transform 0.3s;
+}
