@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 import ResModal from "./ResourcesModal/ResModal";
 
 const Header = () => {
-  const [visibleState, setVisibleState] = useState("visible");
+  const [visibleState, setVisibleState] = useState("hidden");
 
   const toggleMenu = ()=>{
     visibleState == "hidden" ? setVisibleState("visible") : setVisibleState("hidden");
