@@ -1,33 +1,31 @@
+@import "../../styles/mixins";
 
 .gradientOverlay{
-    background-image: url(../../../public/hero-img.jpg);
+    background-image: linear-gradient(#002953CC, #002D5BCC), url(../../../public/hero-img.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
     position: relative;
     background-position: 0 -150px;
-
-    &::before{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        content: "";
-        background: linear-gradient(#002953CC, #002D5BCC);
-        z-index: 1;
-    }
+    z-index: 1;
 
     .hero{
-        position: relative;
+        position: absolute;
         z-index: 2;
         text-align: center;
         top: 50%;
-        // left: 50%;
-        transform: translateY(-70%);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .heroContent{
-            // margin: 0 auto;
+            @include lg{
+                width: max-content;
+            }
+            
+
             h1{
                 font-weight: 600;
                 font-size: 60px;
@@ -54,9 +52,6 @@
             padding: 16px 28px;
             background: rgba(246, 233, 233, 0.1);
             margin-top: 50px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
             cursor: pointer;
 
             p{

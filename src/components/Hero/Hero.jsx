@@ -2,13 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Header from '@/components/Header/Header'
 import styles from "./Hero.module.scss"
-import ResModal from '../Header/ResourcesModal/ResModal'
 
 const Hero = () => {
   return (
     <div className={styles.gradientOverlay}>
         <Header/>
-        {/* <ResModal/> */}
         <div className={styles.hero}>
             <div className={styles.heroContent}>
                 <h1>Beautiful analytics to grow smarter</h1>

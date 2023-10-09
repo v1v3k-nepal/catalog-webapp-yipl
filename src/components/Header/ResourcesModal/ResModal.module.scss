@@ -11,8 +11,9 @@
     justify-content: center;
     position: absolute;
     transform: translateY(-20px);
-    transition: visibility 0s, opacity 0.5s, transform 0.5s;
+    transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
     opacity: 0;
+    visibility: hidden;
 
 
     .modalItem{
@@ -41,5 +42,5 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(15px);
-    transition: visibility 0s, opacity 0.3s, transform 0.3s;
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
 }
