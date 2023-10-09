@@ -1,0 +1,41 @@
+.campaignsCard{
+    width: 352px;
+    height: 597px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .cardContent{
+        margin-top: 20px;
+        padding: 0 32px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        h1{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: #24272E;
+            text-align: left;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #4c5569;
+            text-align: justify;
+            margin-top: 15px;
+        }
+    }
+    .redirection{
+        margin-top: auto;
+        padding: 20px 32px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        div{
+            color:#1D6FA3;
+        }
+    }
+}

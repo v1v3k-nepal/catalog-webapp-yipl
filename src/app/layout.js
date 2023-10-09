@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
         <body className={inter.className}>
           <Hero/>
-          <div className='global-container'>
+          {/* <div className='global-container'> */}
             {children}
-          </div>
+          {/* </div> */}
         </body>
     </html>
   )

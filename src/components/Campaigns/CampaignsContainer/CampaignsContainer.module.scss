@@ -1,0 +1,36 @@
+
+.campaignContainer{
+    width: 100%;
+    padding: 96px 11.45%;
+    background: #F9F9FF;
+
+    .campaignContent{
+        max-width: 768px;
+        margin: 0 auto;
+        text-align: center;
+        h1{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: #24272E;
+            margin-bottom: 32px;
+
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color:#667085;
+            margin-bottom: 48px;
+        }
+    }
+
+    .campaignsCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+    }
+}

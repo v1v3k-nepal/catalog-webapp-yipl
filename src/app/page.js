@@ -1,10 +1,10 @@
-// import styles from './page.module.css'
-import Hero from "@/components/Hero/Hero"
+import styles from './page.module.css'
+import CampaignsContainer from "@/components/Campaigns/CampaignsContainer/CampaignsContainer"
 
 export default function Home() {
   return (
-    <div>
-      {/* <Hero/> */}
+    <div className={styles.homeContainer}>
+      <CampaignsContainer/>
     </div>
   )
 }
