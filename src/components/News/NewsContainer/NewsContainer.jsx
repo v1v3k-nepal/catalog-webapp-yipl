@@ -18,7 +18,7 @@ const NewsContainer = () => {
             ))}
         </div>
         <Link href="https://viveknepal.com.np">
-            <button>View all news</button>
+            <button className='btn'>View all news</button>
         </Link>
     </div>
   )

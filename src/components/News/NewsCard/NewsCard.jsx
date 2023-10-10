@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./NewsCard.module.scss"
 import Image from 'next/image'
 import Link from 'next/link'
+import LearnMore from '@/components/LearnMore/LearnMore'
 
 const NewsCard = ({singleNewsData}) => {
   return (
@@ -14,12 +15,8 @@ const NewsCard = ({singleNewsData}) => {
             <p>{singleNewsData.desc}</p>
         </div>
         <div className={styles.redirection}>
-            <Link href={singleNewsData.newsUrl}>
-                <div>Learn More</div>
-            </Link>
-            <Image src="/right-arrow.png" alt="arrow icon" height={12} width={12}></Image>
+            <LearnMore url={singleNewsData.newsUrl}/>
         </div>
-        
     </div>
   ) 
 }

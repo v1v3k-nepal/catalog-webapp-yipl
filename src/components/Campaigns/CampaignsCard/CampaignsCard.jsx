@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from "./CampaignsCard.module.scss"
+import LearnMore from '@/components/LearnMore/LearnMore';
 
 const CampaignsCard = ({data}) => {
   return (
@@ -11,12 +12,9 @@ const CampaignsCard = ({data}) => {
             <h1>{data.title}</h1>
             <p>{data.desc}</p>
         </div>
-        <Link href={data.redirectUrl}>
-                <div className={styles.redirection}>
-                    <div>Learn More</div>
-                    <Image src="/right-arrow.png" alt="arrow icon" height={12} width={12}></Image>
-                </div>
-        </Link>
+        <div className={styles.redirection}>
+          <LearnMore url={data.redirectUrl}/>
+        </div>
     </div>
   )
 }
