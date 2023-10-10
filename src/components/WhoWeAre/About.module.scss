@@ -1,0 +1,75 @@
+
+.aboutContainer{
+    padding: 96px 11.45%;
+    color: #000;
+    display: flex;
+    gap: 64px;
+
+    .aboutContent{
+        width: 368px;
+        height: 402px;
+        h1{
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: #24272E;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color:#505258;
+
+        }
+        .redirection{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            div{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #1D6FA3;
+            }
+        }
+    }
+
+    .aboutImages{
+        display: flex;
+        gap: 32px;
+        .aboutImgLeft, .aboutImgRight{
+            padding-bottom: 140px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            h1{
+                margin-top: 24px;
+                color:#24272E;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+
+            }
+        }
+        .aboutImgRight{
+            padding-bottom: 0;
+            padding-top: 140px;
+        }
+    }
+}
+
+.abtImgContainer{
+    max-height: 415px;
+    max-width: 328px;
+    border-radius: 16px;
+    overflow: hidden;
+    .scaleImg{
+        transition: all ease 0.5s;
+        &:hover{
+            scale: 1.15;
+            transform: translate(10px, 15px);
+        }
+    }
+}
