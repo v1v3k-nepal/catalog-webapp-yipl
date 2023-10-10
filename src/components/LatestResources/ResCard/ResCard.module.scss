@@ -1,8 +1,56 @@
+@import "../../../styles/variables.module.scss";
 
-.resCard{
+.singleResCard{
     width: 352.91px;
     height: 337.45px;
-    // background: #fff;
-    background-color: rgb(78, 169, 78);
+    background: #fff;
     border-radius: 21.83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+
+    .iconPart{
+        align-self: flex-start;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 15px;
+        .icon{
+            height: 66px;
+            width: 66px;
+            // background: #F8F1FF;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #66686D;
+        }
+    }
+
+    .cardContent{
+        h1{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: $headingColor;
+            margin: 15px 0;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #7C7D82;  
+        }
+    }
+
+    .redirection{
+        align-self: flex-start;
+        margin-top: auto;
+    }
 }

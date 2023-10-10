@@ -12,9 +12,9 @@ const ResContainer = () => {
         <p>The latest resources includes Transparency Toolkit, Evidence, Best Practices</p>
       </div>
       <div className={styles.resCards}>
-      {ResData.map((item)=>(
-        <ResCard key={item.id} singleResData={item}/>
-      ))}
+        {ResData.map((item)=>(
+          <ResCard key={item.id} singleResData={item}/>
+        ))}
       </div>
       <Link href="https://viveknepal.com.np">
           <button className='btn'>View all resources</button>
