@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+@import "../../../styles/mixins";
+
 .campaignsCard{
     width: 352px;
     height: 597px;
@@ -36,6 +39,10 @@
         gap: 10px;
         div{
             color:#1D6FA3;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'DM Sans', sans-serif;
         }
     }
 }
