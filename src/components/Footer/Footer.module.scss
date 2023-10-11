@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     background-image: linear-gradient(45deg, rgba(37, 84, 127, 0.85), rgba(37,84,127, 0.85)), 
     url(../../../public/footer-img.jpg);
     background-size: cover;
@@ -14,15 +15,44 @@
     position: relative;
     z-index: 1;
     color: #fff;
+    flex-direction: column-reverse;
+    @include lg{
+        flex-direction: row;
+    }
 
     .logoSection{
-        max-width: 304px;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include lg{
+            align-items: start;
+            max-width: 304px;
+        }
+
+        .imgContainer{
+            position: relative;
+            right: 10px;
+            height: 50px;
+            width: 3.33*50px;
+            @include lg{
+                right: 0;
+                height: 5vw;
+                width: 5*3.33vw;
+            }
+            // background-color: green;
+        }
 
         p{
             font-weight: 400;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 21px;
             margin: 22px 0;
+            text-align: center;
+            @include lg{
+                text-align: left;
+                font-size: 14px;
+            }
         }
         .iconContainer{
             display: flex;
@@ -40,8 +70,14 @@
     }
     .footerNav{
         display: flex;
-        gap: 80px;
-        @include md{
+        gap: 40px;
+        @include sm{
+            gap: 120px;
+        }
+        @include lg{
+            gap: 80px;
+        }
+        @include lg{
             margin-left: auto;
         }
 

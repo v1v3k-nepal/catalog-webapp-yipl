@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.logoSection}>
-        <Image src="/company-logo.png" alt="company logo" height={71} width={237}></Image>
+        <div className={styles.imgContainer}>
+          <Image src="/company-logo.png" alt="company logo" fill={true} objectFit='cover'></Image>
+        </div>
         <p>We are a collaboration of non-government organisation and professionals working to ensure that government spending.</p>
         <div className={styles.iconContainer}>
           <Link href="https://viveknepal.com.np">
@@ -46,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1>Work With Us</h1>
+          <h1>Work with Us</h1>
           <div>
             <Link href="https://viveknepal.com.np"><p>Contact Us</p></Link>
             <Link href="https://viveknepal.com.np"><p>Join Us</p></Link>
