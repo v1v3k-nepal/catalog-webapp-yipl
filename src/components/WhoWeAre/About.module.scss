@@ -2,26 +2,43 @@
 @import "../../styles/variables.module.scss";
 
 .aboutContainer{
-    padding: 96px $paddingX;
+    padding: 96px 11.45%;
     color: #000;
     display: flex;
     gap: 64px;
+    flex-direction: column;
+    @include lg{
+        flex-direction: row;
+    }
 
     .aboutContent{
-        width: 368px;
-        height: 402px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include lg{
+            width: 368px;
+            height: 402px;
+        }
         h1{
             margin-bottom: 20px;
             font-weight: 600;
             font-size: 32px;
             line-height: 40px;
             color: #24272E;
+            @include lg{
+                align-self: flex-start;
+            }
         }
         p{
             font-weight: 400;
             font-size: 18px;
             line-height: 27px;
             color:#505258;
+            text-align: center;
+            @include lg{
+                text-align: left;
+            }
 
         }
         .redirection{
@@ -41,32 +58,70 @@
     .aboutImages{
         display: flex;
         gap: 32px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include xsm{
+            flex-direction: row;
+        }
         .aboutImgLeft, .aboutImgRight{
-            padding-bottom: 140px;
             display: flex;
             flex-direction: column;
             gap: 40px;
+            @include xsm{
+                padding-bottom: 140px;
+            }
             h1{
                 margin-top: 24px;
                 color:#24272E;
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 32px;
+                @include xsm{
+                    font-size: 18px;
+                }
+                @include sm{
+                    font-size: 24px;
+                }
 
             }
         }
         .aboutImgRight{
-            padding-bottom: 0;
-            padding-top: 140px;
+            @include xsm{
+                padding-bottom: 0;
+                padding-top: 140px;
+            }
         }
     }
 }
 
 .abtImgContainer{
-    max-height: 415px;
-    max-width: 328px;
+    position: relative;
     border-radius: 16px;
     overflow: hidden;
+    height: 415px;
+    width: 328px;
+    & *{
+        object-fit: cover;
+    }
+    @include xsm{
+        width: 35vw;
+        height: 1.27*35vw;
+    }
+    @include sm{
+        width: 35vw;
+        height: 1.27*35vw;
+    }
+    @include md{
+        width: 328px;
+        height: 415px;
+    }
+    @include lg{
+        width: 22vw;
+        height: 1.27*22vw;
+        max-height: 415px;
+        max-width: 328px;
+    }
     .scaleImg{
         transition: all ease 0.5s;
         &:hover{

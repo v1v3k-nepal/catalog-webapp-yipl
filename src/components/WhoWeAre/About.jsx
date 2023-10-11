@@ -35,8 +35,9 @@ const About = () => {
               <Image
                 src="/about-img1.png"
                 alt="about image"
-                width={328}
-                height={415}
+                // width={328}
+                // height={415}
+                fill={true}
                 className={styles.scaleImg}
               ></Image>
             </div>
@@ -47,8 +48,9 @@ const About = () => {
               <Image
                 src="/about-img2-new.png"
                 alt="about image"
-                width={328}
-                height={415}
+                // width={328}
+                // height={415}
+                fill={true}
                 className={styles.scaleImg}
               ></Image>
             </div>
@@ -57,13 +59,13 @@ const About = () => {
         </div>
         <div className={styles.aboutImgRight}>
           <div>
-            <div className={styles.abtImgContainer}></div>
             <div className={styles.abtImgContainer}>
               <Image
                 src="/about-img3.png"
                 alt="about image"
-                width={328}
-                height={415}
+                // width={328}
+                // height={415}
+                fill={true}
                 className={styles.scaleImg}
               ></Image>
             </div>
@@ -74,8 +76,9 @@ const About = () => {
               <Image
                 src="/about-img4.png"
                 alt="about image"
-                width={328}
-                height={415}
+                // width={328}
+                // height={415}
+                fill={true}
                 className={styles.scaleImg}
               ></Image>
             </div>

@@ -12,8 +12,11 @@
     align-items: center;
 
     .clientsLogo{
+        // width: 100%;
+        overflow-x: scroll;
         flex: 1;
         display: flex;
+        gap: 30px;
         justify-content: space-evenly;
         & *{
             object-fit: contain;
