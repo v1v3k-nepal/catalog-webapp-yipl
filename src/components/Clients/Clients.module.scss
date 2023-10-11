@@ -1,10 +1,11 @@
 @import "../../styles/mixins";
+@import "../../styles/variables.module.scss";
 
 .clientsContainer{
     color: #000;
     height: 200px;
     background: #F9F9FF;
-    padding: 0 11.45%;
+    padding: 0 $paddingX;
     width: 100%;
     display: flex;
     gap: 65px;

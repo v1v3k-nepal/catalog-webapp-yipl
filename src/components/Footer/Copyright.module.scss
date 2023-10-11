@@ -1,8 +1,9 @@
 @import "../../styles/mixins";
+@import "../../styles/variables.module.scss";
 
 .copyright{
     width: 100%;
-    padding: 32px 11.45%;
+    padding: 32px $paddingX;
     height: 94px;
     background: #fff;
     display: flex;

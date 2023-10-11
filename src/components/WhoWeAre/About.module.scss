@@ -1,6 +1,8 @@
+@import "../../styles/mixins";
+@import "../../styles/variables.module.scss";
 
 .aboutContainer{
-    padding: 96px 11.45%;
+    padding: 96px $paddingX;
     color: #000;
     display: flex;
     gap: 64px;

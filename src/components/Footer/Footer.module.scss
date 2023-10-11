@@ -1,7 +1,8 @@
 @import "../../styles/mixins";
+@import "../../styles/variables.module.scss";
 
 .footer{
-    padding: 0 11.45%;
+    padding: 0 $paddingX;
     display: flex;
     align-items: center;
     justify-content: center;

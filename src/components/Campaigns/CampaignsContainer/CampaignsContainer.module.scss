@@ -1,7 +1,9 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables.module.scss";
 
 .campaignContainer{
     width: 100%;
-    padding: 96px 11.45%;
+    padding: 96px $paddingX;
     background: #F9F9FF;
 
     .campaignContent{
