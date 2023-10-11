@@ -7,7 +7,15 @@ import LearnMore from '@/components/LearnMore/LearnMore'
 const NewsCard = ({singleNewsData}) => {
   return (
     <div className={styles.newsCard}>
-        <Image src={singleNewsData.imgSrc} alt="news image" height={201} width={315}></Image>
+      <div className={styles.imgContainer}>
+        <Image src={singleNewsData.imgSrc} 
+        alt="news image" 
+        // height={201} 
+        // width={315}
+        objectFit='cover'
+        fill={true}
+        ></Image>
+      </div>
         <div className={styles.newsTitle}>
             <h1>{singleNewsData.title}</h1>
         </div>
