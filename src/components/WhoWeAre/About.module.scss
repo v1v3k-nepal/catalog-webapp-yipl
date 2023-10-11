@@ -108,10 +108,10 @@
         width: 35vw;
         height: 1.27*35vw;
     }
-    @include sm{
-        width: 35vw;
-        height: 1.27*35vw;
-    }
+    // @include sm{
+    //     width: 35vw;
+    //     height: 1.27*35vw;
+    // }
     @include md{
         width: 328px;
         height: 415px;
