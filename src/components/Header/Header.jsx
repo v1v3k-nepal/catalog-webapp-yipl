@@ -21,14 +21,7 @@ const Header = () => {
     <div className={styles.headerContainer}>
     <div className={styles.headerContent}>
       <div className={styles.headerLeft}>
-        <Image
-          src="/company-logo.png"
-          alt="company-logo"
-          width={160}
-          height={48}
-          className={styles.companyLogo}
-        ></Image>
-
+        <Image src="/company-logo.png" alt="company-logo" width={160} height={48} className={styles.companyLogo}></Image>
         <nav>
           <ul>
             <div className={`${styles.dynamicItems} ${resModalVisibleState=="visible" ? styles.visible : ""}`}>
@@ -47,14 +40,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <Image
-        src="/search-icon.png"
-        alt="search icon"
-        width={36}
-        height={36}
-        className={styles.searchIcon}
-        onClick={()=>toggleShowSearch()}
-      ></Image>
+      <Image src="/search-icon.png" alt="search icon" width={36} height={36} className={styles.searchIcon} onClick={()=>toggleShowSearch()}></Image>
     </div>
     <SearchModal showSearch={showSearch} toggleShowSearch={toggleShowSearch}/>
     </div>
