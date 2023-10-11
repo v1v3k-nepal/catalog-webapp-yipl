@@ -1,0 +1,28 @@
+@import "../../styles/mixins";
+
+.copyright{
+    width: 100%;
+    padding: 32px 11.45%;
+    height: 94px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #7C7D82;
+    }
+
+    .copyrightImg{
+        position: relative;
+        height: 20px;
+        width: 4.2*20px;
+        @include sm{
+            height: 25px;
+            width: 105px;
+        }
+    }
+}
