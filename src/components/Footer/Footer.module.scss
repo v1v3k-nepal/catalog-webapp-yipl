@@ -1,0 +1,63 @@
+@import "../../styles/mixins";
+
+.footer{
+    padding: 0 11.45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, rgba(37, 84, 127, 0.85), rgba(37,84,127, 0.85)), 
+    url(../../../public/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    .logoSection{
+        max-width: 304px;
+
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            margin: 22px 0;
+        }
+        .iconContainer{
+            display: flex;
+            gap: 16px;
+            .socialIcon{
+                height: 36px;
+                width: 36px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .footerNav{
+        display: flex;
+        gap: 80px;
+        @include md{
+            margin-left: auto;
+        }
+
+        h1{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 32px;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            font-family: 'DM Sans';
+            margin-bottom: 16px;
+        }
+    }
+}
