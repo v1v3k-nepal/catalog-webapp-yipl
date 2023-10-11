@@ -30,8 +30,14 @@
     }
 
     .resCards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-flow: wrap;
         gap: 26px;
+        @include md{
+            gap: 20px;
+        }
+        @include lg{
+            gap: 26px;
+        }
     }
 }
