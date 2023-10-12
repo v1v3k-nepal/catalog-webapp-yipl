@@ -12,7 +12,6 @@ const NewsCard = ({singleNewsData}) => {
         alt="news image" 
         // height={201} 
         // width={315}
-        objectFit='cover'
         fill={true}
         ></Image>
       </div>

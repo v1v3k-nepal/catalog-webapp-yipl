@@ -8,7 +8,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.logoSection}>
         <div className={styles.imgContainer}>
-          <Image src="/company-logo.png" alt="company logo" fill={true} objectFit='cover'></Image>
+          <Image src="/company-logo.png" alt="company logo" fill={true}></Image>
         </div>
         <p>We are a collaboration of non-government organisation and professionals working to ensure that government spending.</p>
         <div className={styles.iconContainer}>
