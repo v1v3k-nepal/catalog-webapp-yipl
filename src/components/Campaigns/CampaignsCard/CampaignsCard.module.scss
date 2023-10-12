@@ -4,7 +4,10 @@
 .campaignsCard{
     flex: 1;
     // width: 352px;
-    min-width: 320px;
+    min-width: 310px;
+    @include sm{
+        min-width: 320px;
+    }
     @include lg{
         min-width: 245px;
         max-width: 352px;
