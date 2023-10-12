@@ -5,6 +5,9 @@
     width: 100%;
     padding: 96px $paddingX;
     background: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .campaignContent{
         max-width: 768px;
@@ -33,6 +36,15 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        // display: grid;
         gap: 27px;
+        // place-items: center;
+        // grid-template-columns: 1fr;
+        // @include sm{
+        //     grid-template-columns: 1fr 1fr;
+        // }
+        // @include lg{
+        //     grid-template-columns: 1fr 1fr 1fr;
+        // }
     }
 }

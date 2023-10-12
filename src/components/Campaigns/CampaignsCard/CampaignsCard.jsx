@@ -7,7 +7,9 @@ import LearnMore from '@/components/LearnMore/LearnMore';
 const CampaignsCard = ({data}) => {
   return (
     <div className={styles.campaignsCard}>
-        <Image src={data.imageSrc} alt="campaign image" height={352} width={352}></Image>
+      <div className={styles.imgContainer}>
+        <Image src={data.imageSrc} alt="campaign image" fill={true}></Image>
+      </div>
         <div className={styles.cardContent}>
             <h1>{data.title}</h1>
             <p>{data.desc}</p>

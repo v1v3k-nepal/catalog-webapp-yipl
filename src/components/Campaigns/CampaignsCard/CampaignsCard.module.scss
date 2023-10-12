@@ -2,12 +2,36 @@
 @import "../../../styles/mixins";
 
 .campaignsCard{
-    width: 352px;
+    flex: 1;
+    // width: 352px;
+    min-width: 320px;
+    @include lg{
+        min-width: 245px;
+        max-width: 352px;
+        height: 52vw;
+        max-height: 597px;
+    }
     height: 597px;
     border-radius: 22px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+
+    .imgContainer{
+        position: relative;
+        // height: 352px;
+        // width: 352px;
+        height: 58.96%;
+        @include lg{
+            height: 25vw;
+            max-height: 352px;
+        }
+        width: 100%;
+        & *{
+            object-fit: cover;
+            border-radius: 22px 22px 0 0;
+        }
+    }
 
     .cardContent{
         margin-top: 20px;
