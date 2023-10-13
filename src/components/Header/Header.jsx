@@ -25,7 +25,7 @@ const Header = (props) => {
     menuVisibleState ? setMenuVisibleState(false) : setMenuVisibleState(true);
     menuIcon == "block" ? setMenuIcon("none") : setMenuIcon("block");
     closeIcon == "block" ? setCloseIcon("none") : setCloseIcon("block");
-    console.log("this is toggle menu", menuVisibleState)
+    // console.log("this is toggle menu", menuVisibleState)
   }
 
   return (

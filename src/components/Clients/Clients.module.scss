@@ -12,8 +12,8 @@
     align-items: center;
 
     .clientsLogo{
-        // width: 100%;
-        overflow-x: scroll;
+        // overflow-x: scroll;
+        overflow-x: hidden;
         flex: 1;
         display: flex;
         gap: 30px;
@@ -21,6 +21,8 @@
         & *{
             object-fit: contain;
             cursor: pointer;
+            transition: all ease 0.3s;
+            // transform: translateX(-200px);
         }
     }
 

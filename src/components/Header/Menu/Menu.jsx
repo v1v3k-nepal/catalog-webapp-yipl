@@ -9,7 +9,7 @@ import SearchModal from "@/components/Hero/SearchModal/SearchModal";
 
 const Menu = ({visibleState}) => {
   const [resModalVisibleState, setResModalVisibleState] = useState("hidden");
-  const [showSearch, setShowSearch] = useState(true);
+  const [showSearch, setShowSearch] = useState(false);
   
   const toggleResModal = ()=>{
     resModalVisibleState == "hidden" ? setResModalVisibleState("visible") : setResModalVisibleState("hidden");
