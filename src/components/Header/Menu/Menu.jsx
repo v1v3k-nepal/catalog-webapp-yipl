@@ -31,7 +31,7 @@ const Menu = ({visibleState}) => {
             <SearchModal showSearch={showSearch} toggleShowSearch={toggleShowSearch}/>
           </div>
         </div>
-        <div className={styles.resContainer} onClick={() => toggleMenu()}>
+        <div className={styles.resContainer}>
           <div className={styles.res}>
             <div onClick={()=>toggleResModal()}>Resources</div>
             <Image
