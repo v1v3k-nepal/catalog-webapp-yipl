@@ -7,10 +7,12 @@ import ResContainer from '@/components/LatestResources/ResContainer/ResContainer
 import Contact from '@/components/ContactUs/Contact'
 import Footer from '@/components/Footer/Footer'
 import Copyright from '@/components/Footer/Copyright'
+import Hero from '@/components/Hero/Hero'
 
 export default function Home() {
   return (
     <div className={styles.homeContainer}>
+      <Hero/>
       <CampaignsContainer/>
       <About/>
       <Clients/>
