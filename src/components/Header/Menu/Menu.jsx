@@ -23,8 +23,8 @@ const Menu = ({visibleState}) => {
     <div className={`${styles.menu} ${visibleState ? styles.visibleClass : styles.hideClass}`}>
       <div className={styles.content}>
         <Link href="/">Home</Link>
-        <Link href="/about">About Us</Link>
-        <Link href="/caseStudies">Case Studies</Link>
+        <Link href="/">About Us</Link>
+        <Link href="/">Case Studies</Link>
         <div className={styles.searchModal}>
           <p onClick={()=>toggleShowSearch()}>Search</p>
           <div style={{position: "static"}}>

@@ -7,7 +7,7 @@ const Clients = () => {
   const [currentLogo,setCurrentLogo] = useState(0);
 
   const handleNext = ()=>{
-    (currentLogo <= clientsData.length - 1) ? setCurrentLogo((prev)=> prev + 1) : setCurrentLogo(0);
+    (currentLogo <= (clientsData.length - 1)) ? setCurrentLogo((prev)=> prev + 1) : setCurrentLogo(0);
     // console.log("next",currentLogo);
   }
   const handlePrev = ()=>{
@@ -40,8 +40,8 @@ const Clients = () => {
     <div className={styles.clientsContainer}>
         <Image src="/arrow_back_ios.png" alt="previous icon" height={24} width={24} className={styles.prevBtn} onClick={()=>handlePrev()}></Image>
         <div className={styles.clientsLogo}>
-          {clientsData.map((item)=>(
-              <Image src={item.imgSrc} alt="client logo" 
+          {clientsData?.map((item)=>(
+              <Image src={item?.imgSrc} alt="client logo" 
               height={50} width={125} 
               key={item.id}
               style={{transform: `translateX(-${currentLogo*100}%)`}}
