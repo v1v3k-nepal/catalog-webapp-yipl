@@ -1,16 +1,20 @@
+@import "../../../styles/mixins";
 
 .resModal{
     background: #fff;
     border: 1px solid #EAECF0;
     border-radius: 8px;
-    max-width: 412px;
+    max-width: 90vw;
+    @include sm{
+        width: 412px;
+    }
     max-height: 320px;
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    z-index: 6;
+    z-index: 7;
     transform: translateY(-20px);
     transition: visibility 0.5s, opacity 0.5s, transform 0.5s;
     opacity: 0;

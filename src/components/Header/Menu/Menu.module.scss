@@ -1,0 +1,57 @@
+@import "../../../styles/mixins";
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    @include xl{
+        display: none;
+    }
+    z-index: 6;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background: linear-gradient(rgba(0, 22, 43, 0.95), rgba(0, 27, 54, 0.95));
+    color: #fff;
+    .content{
+        display: flex;
+        flex-direction: column;
+        & *{
+            cursor: pointer;
+        }
+        gap: 20px;
+        font-size: 45px;
+        @include sm{
+            font-size: 50px;
+        }
+        @include lg{
+            font-size: 5vw;
+        }
+
+        .resContainer{
+            font-size: inherit;
+            @include md{
+                display: none;
+            }
+
+            .res{
+                display: flex;
+                gap: 8px;
+                cursor: pointer;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.visibleClass{
+    // display: block;
+    top: 81px;
+    transition: all ease 0.5s;
+}
+
+.hideClass{
+    transition: all ease 0.5s;
+    transform: translateY(-110vh);
+    // display: none;
+}

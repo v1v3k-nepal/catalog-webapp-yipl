@@ -1,12 +1,15 @@
+@import "../../styles/mixins";
+
 .headerContainer {
   border-bottom: 1px solid #fff;
-  // z-index: 4;
-  // position: relative;
 
   .headerContent {
     max-width: 1280px;
     height: 80px;
-    padding: 0 32px;
+    padding: 0 5%;
+    @include xl{
+      padding: 0 32px;
+    }
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -31,6 +34,13 @@
           gap: 40px;
           opacity: 0;
           transition: opacity 0.5s;
+          align-items: center;
+          display: none;
+          // visibility: hidden;
+          @include xl{
+            display: contents;
+            // visibility: visible;
+          }
           
           li {
             font-weight: 600;
@@ -47,6 +57,18 @@
         }
 
         .resContainer{
+          display: none;
+          position: absolute;
+          left: 51%;
+          @include lg{
+            left: 50%;
+          }
+          top: 28px;
+          transform: translateX(-50%);
+          z-index: 8;
+          @include md{
+            display: block;
+          }
           .res{
             display: flex;
             gap: 8px;
@@ -66,6 +88,26 @@
     .searchIcon {
       padding: 6px;
       cursor: pointer;
+      display: none;
+      @include xl{
+        display: block;
+      }
+    }
+
+    .iconsContainer{
+      display: block;
+      @include xl{
+        display: none;
+      }
+    }
+    .menuIcon, .closeIcon{
+      cursor: pointer;
+      object-fit: cover;
+      padding: 2px;
+      transition: all ease 0.3s;
+    }
+    .closeIcon{
+      padding: 0;
     }
   }
 }

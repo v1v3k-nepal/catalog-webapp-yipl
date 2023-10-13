@@ -1,12 +1,19 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Header from '@/components/Header/Header'
 import styles from "./Hero.module.scss"
+import Menu from '../Header/Menu/Menu'
 
 const Hero = () => {
+  const [dataFromHeader, setDataFromHeader] = useState(false);
+  const handleDataPassed = (data)=>{
+    setDataFromHeader(data);
+  }
   return (
     <div className={styles.gradientOverlay}>
-        <Header/>
+        <Header onDataPassed={handleDataPassed}/>
+        <Menu visibleState={dataFromHeader}/>
         <div className={styles.hero}>
             <div className={styles.heroContent}>
                 <h1>Beautiful analytics to grow smarter</h1>
